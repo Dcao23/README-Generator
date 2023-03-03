@@ -7,3 +7,4 @@
 This application is designed for users to generate a README.md template with a series of prompts using node.
 
 ## Video Link
+https://drive.google.com/file/d/1UegvpjB-r6MVHrEtQ6WP7qsi6A_KWzBf/view

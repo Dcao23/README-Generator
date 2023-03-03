@@ -59,7 +59,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function (err) {
+    return fs.writeFile(fileName, data, function (err) {
         if (err) {
             console.log(err);
         } else {
@@ -72,7 +72,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then(function (data) {
         console.log(data);
-        const fileName = './utils/NewREADME';
+        const fileName = 'NewREADME.md';
         writeToFile(fileName, generateMarkdown(data));
     });
 }
